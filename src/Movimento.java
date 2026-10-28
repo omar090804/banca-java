@@ -6,11 +6,12 @@ public class Movimento {
     private final LocalDate data;
     private final BigDecimal importo;
     private final String descrizione;
-    public Movimento(int id,LocalDate data,BigDecimal importo,String descrizione){
-        this.id=id;
-        this.data=data;
-        this.importo=importo;
-        this.descrizione=descrizione;
+
+    public Movimento(int id, LocalDate data, BigDecimal importo, String descrizione) {
+        this.id = id;
+        this.data = data;
+        this.importo = importo;
+        this.descrizione = descrizione;
     }
 
     public BigDecimal getImporto() {
@@ -31,5 +32,6 @@ public class Movimento {
 
     @Override
     public String toString() {
-        return data+" | "+importo+" | "+descrizione;  }
+        return data + " | " + importo + " | " + descrizione;
+    }
 }

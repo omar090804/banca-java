@@ -3,11 +3,12 @@ public class Cliente {
     private final String nome;
     private final String cognome;
     private final String citta;
-    public Cliente(int id,String nome,String cognome,String citta){
-        this.id=id;
-        this.nome=nome;
-        this.cognome=cognome;
-        this.citta=citta;
+
+    public Cliente(int id, String nome, String cognome, String citta) {
+        this.id = id;
+        this.nome = nome;
+        this.cognome = cognome;
+        this.citta = citta;
     }
 
     public int getId() {
@@ -28,6 +29,6 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return  nome + " "+cognome + " (" + citta + ")" ;
+        return nome + " " + cognome + " (" + citta + ")";
     }
 }
