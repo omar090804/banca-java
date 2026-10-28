@@ -5,5 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Movimento m = new Movimento(1, LocalDate.of(2026,1,1),new BigDecimal("150"),"stipendio");
         System.out.println(m);
+        Cliente o=new Cliente(1,"Omar","Hassanein","Milano");
+        System.out.println(o);
     }
 }
