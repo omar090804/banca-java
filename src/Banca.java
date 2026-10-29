@@ -72,4 +72,19 @@ public class Banca {
         da.preleva(importo,"Bonifico a :"+ibanA);
         a.deposita(importo,"Bonifico da " + ibanDa);
     }
+
+    /**
+     * cercare un cliente dal suo id
+     * @param id
+     * @return il clente se trovato
+     * @throws IllegalArgumentException se il cliente non esiste
+     */
+    public Cliente trovaCliente(int id) {
+        for (Cliente c : clienti) {
+            if (c.getId() == id) {
+                return c;
+            }
+        }
+        throw new IllegalArgumentException("Cliente non trovato");
+    }
 }
