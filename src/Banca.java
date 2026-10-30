@@ -25,6 +25,7 @@ public class Banca {
    public Cliente creaCliente(String nome, String cognome, String citta){
        Cliente c=new Cliente(prossimoIdCliente,nome,cognome,citta);
        clienti.add(c);
+       System.out.println("il tuo id è : "+prossimoIdCliente);
        prossimoIdCliente++;
        return c;
 
@@ -41,6 +42,8 @@ public class Banca {
        String iban= String.format("IT60X0542811101%012d", prossimoNumeroConto);
        Conto c=new Conto(iban,tipo,cliente);
        conti.put(iban,c);
+       System.out.println("conto aperto con sucesso ");
+       System.out.println("il tuo iban e "+iban);
        prossimoNumeroConto++;
        return c;
    }
