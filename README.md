@@ -8,10 +8,11 @@ A console banking system written in plain Java, built while learning backend dev
 - [x] Accounts with checking and savings types (`Conto`)
 - [x] Deposits and withdrawals with validation
 - [x] Balance calculated from the list of transactions
-- [ ] Bank class to manage customers and accounts
-- [ ] Transfers between accounts
-- [ ] Console menu
+- [x] Bank class to manage customers and accounts
+- [x] Transfers between accounts
+- [x] Console menu
 - [ ] Saving and loading data from files
+
 
 ## Design notes
 
